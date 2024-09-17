@@ -17,7 +17,7 @@ func main() {
 	for i, currentEntry := range greeting {
 		fmt.Println(i, currentEntry)
 	}
-
+	fmt.Println("----------------------")
 	for j := 0; j < len(greeting); j++ {
 		fmt.Println(greeting[j])
 	}

@@ -9,6 +9,7 @@ func main() {
 }
 
 func foo() {
+	x := 6
 	// no access to x
 	// this does not compile
 	fmt.Println(x)

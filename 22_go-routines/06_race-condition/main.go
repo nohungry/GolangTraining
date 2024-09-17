@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	// "math/rand"
 	"math/rand"
 	"sync"
 	"time"
@@ -19,7 +20,8 @@ func main() {
 }
 
 func incrementor(s string) {
-	rand.Seed(time.Now().UnixNano())
+	// rand.Seed(time.Now().UnixNano())
+	rand.New(rand.NewSource(time.Now().UnixNano()))
 	for i := 0; i < 20; i++ {
 		x := counter
 		x++

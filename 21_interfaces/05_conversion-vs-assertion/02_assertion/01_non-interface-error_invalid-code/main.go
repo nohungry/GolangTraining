@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	name := "Sydney"
-	str, ok := name.(string)
+	str, ok := name, 
 	if ok {
 		fmt.Printf("%q\n", str)
 	} else {

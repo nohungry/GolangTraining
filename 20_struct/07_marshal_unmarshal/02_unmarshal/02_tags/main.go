@@ -21,6 +21,7 @@ func main() {
 	json.Unmarshal(bs, &p1)
 
 	fmt.Println("--------------")
+	fmt.Println(p1)
 	fmt.Println(p1.First)
 	fmt.Println(p1.Last)
 	fmt.Println(p1.Age)

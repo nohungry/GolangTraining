@@ -1,10 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+)
 
 func main() {
-	go foo()
-	go bar()
+	var wg sync.WaitGroup
+	wg.Add(2)
+
+	go func() {
+		foo()
+		wg.Done()
+	}()
+	// go foo()
+	go func() {
+		bar()
+		wg.Done()
+	}()
+	// go bar()
+	wg.Wait()
 }
 
 func foo() {

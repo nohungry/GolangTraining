@@ -7,10 +7,10 @@ func hello() {
 }
 
 func world() {
-	fmt.Println("world")
+	fmt.Print("world")
 }
 
 func main() {
+	defer hello()
 	defer world()
-	hello()
 }

@@ -34,6 +34,6 @@ func main() {
 		LicenseToKill: false,
 	}
 
-	fmt.Println(p1.First, p1.Last, p1.Age, p1.LicenseToKill)
-	fmt.Println(p2.First, p2.Last, p2.Age, p2.LicenseToKill)
+	fmt.Println(p1.First, p1.Last, p1.Age, "kill License: ", p1.LicenseToKill)
+	fmt.Println(p2.First, p2.Last, p2.Age, "kill License: ", p2.LicenseToKill)
 }

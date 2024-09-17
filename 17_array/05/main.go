@@ -10,7 +10,7 @@ func main() {
 	for i := 0; i < 256; i++ {
 		x[i] = string(i)
 	}
-	for _, v := range x {
-		fmt.Printf("%v - %T - %v\n", v, v, []byte(v))
+	for i, v := range x {
+		fmt.Printf("%v - %T - %v\n", i, v, []byte(v))
 	}
 }
